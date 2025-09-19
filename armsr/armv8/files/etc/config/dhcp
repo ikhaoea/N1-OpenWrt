@@ -1,1 +1,11 @@
+config dhcp 'lan'
+	option interface 'lan'
+	option start '100'
+	option limit '150'
+	option leasetime '12h'
+	list dhcp_option '3,192.168.110.2'
+	list dhcp_option '6,192.168.110.2'
 
+config dhcp 'docker'
+	option interface 'docker'
+	option ignore '1'
